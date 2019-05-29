@@ -16,4 +16,9 @@ public class font extends Application {
                 .build()
         );
     }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
 }
