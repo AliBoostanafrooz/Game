@@ -27,6 +27,7 @@
                 android:layout_width="52dp"
                 android:layout_height="match_parent"
                 android:padding="5dp"
+                android:id="@+id/searchCafe"
                 android:src="@drawable/ic_searchlocation" />
 
             <EditText
@@ -47,12 +48,12 @@
 
         <com.mapbox.mapboxsdk.maps.MapView
             android:id="@+id/mapView"
-            mapbox:mapbox_cameraTargetLat="31.3183"
-            mapbox:mapbox_cameraTargetLng="48.6706"
-            mapbox:mapbox_cameraZoom="11.5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6" />
+            android:layout_weight="6"
+            mapbox:mapbox_cameraTargetLat="31.3183"
+            mapbox:mapbox_cameraTargetLng="48.6706"
+            mapbox:mapbox_cameraZoom="11.5" />
 
         <LinearLayout
             android:layout_width="match_parent"

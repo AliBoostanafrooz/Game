@@ -1,4 +1,4 @@
-package com.example.piratilgame.classes;
+package com.example.piratilgame.Class;
 
 import android.app.Activity;
 import android.view.Window;

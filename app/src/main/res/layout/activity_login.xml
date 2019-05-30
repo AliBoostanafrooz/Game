@@ -78,6 +78,8 @@ tools:context=".Login">
             android:textColor="#FFF"
             android:textSize="30sp"
             android:id="@+id/BtnEnter"/>
+
+
     </LinearLayout>
 
 

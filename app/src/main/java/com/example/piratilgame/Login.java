@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.piratilgame.Class.noTitle;
 import com.google.gson.JsonObject;
 
 import org.json.JSONException;
@@ -33,9 +35,11 @@ public class Login extends AppCompatActivity {
     EditText phone;
     RequestQueue requestQueue;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        noTitle noTitle=new noTitle(this);
         setContentView(R.layout.activity_login);
         phone = findViewById(R.id.PhoneNumber);
         requestQueue = Volley.newRequestQueue(this);
