@@ -49,13 +49,13 @@
             android:padding="15dp">
 
             <TextView
+                android:id="@+id/cafeName"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:id="@+id/cafeName"
                 android:text="کافی شاپ امیر"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
