@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
+import com.example.piratilgame.Class.noTitle;
+
 public class Complete_Profile extends Activity {
 
     private RadioGroup radiogroup1;
@@ -22,6 +24,7 @@ public class Complete_Profile extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        noTitle noTitle=new noTitle(this);
         setContentView(R.layout.activity_complete__profile);
 
         radiogroup1 = (RadioGroup) findViewById(R.id.radioSex1);

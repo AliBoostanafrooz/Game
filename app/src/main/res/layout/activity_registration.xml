@@ -53,6 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text="کد ارسال شده را وارد کنید"
+                android:fontFamily="@font/IRANSans"
                 android:textAlignment="center"
                 android:textColor="@color/blueDark"
                 android:textSize="24sp" />
@@ -75,6 +76,7 @@
                 android:id="@+id/btn_Register"
                 android:padding="10dp"
                 android:text="ثبت کد"
+                android:fontFamily="@font/IRANSans"
                 android:textColor="#FFF"
                 android:textSize="25sp" />
         </LinearLayout>
