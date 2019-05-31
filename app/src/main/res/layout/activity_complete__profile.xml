@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_g"
     android:orientation="vertical"
-    tools:context=".Login">
+    tools:context=".Complete_Profile">
 
 
     <RelativeLayout

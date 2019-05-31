@@ -6,5 +6,6 @@
     <color name="blueDark">#5e49D7</color>
     <color name="blueLight">#B382DB</color>
     <color name="textHint">#FFFFFF</color>
+    <color name="timer">#FCA964</color>
 
 </resources>
