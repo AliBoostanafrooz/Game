@@ -1,7 +1,9 @@
 package com.example.piratilgame;
 
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -36,4 +38,13 @@ public class Map extends AppCompatActivity {
 
 
     }
+
+    public void DialogShow (){
+
+        Dialog dialog=new Dialog(Map.this);
+        LayoutInflater layoutInflater=LayoutInflater.from(this);
+        View view=layoutInflater.inflate(R.layout.dialog_box, null);
+        dialog.setContentView(view);
+        dialog.setCancelable(true);
+        dialog.show();}
 }
