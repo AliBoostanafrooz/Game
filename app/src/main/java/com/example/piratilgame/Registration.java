@@ -2,6 +2,7 @@ package com.example.piratilgame;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -74,17 +75,19 @@ public class Registration extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //TODO::
+
+                        Toast.makeText(Registration.this, "ارتباط با سرور برقرار نشد. لطفاً مجدد تلاش کنید", Toast.LENGTH_SHORT).show();
                     }
                 }) {
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        HashMap<String, String> stringStringHashMap = new HashMap<>();
-                        stringStringHashMap.put("mobile", TextMobile);
-                        stringStringHashMap.put("code", Rec_code);
-                        stringStringHashMap.put("appVersion", "1");
-                        stringStringHashMap.put("device", "android");
-                        stringStringHashMap.put("method", "checkCode");
-                        return stringStringHashMap;
-                    }
+                        protected Map<String, String> getParams() throws AuthFailureError {
+                            HashMap<String, String> stringStringHashMap = new HashMap<>();
+                            stringStringHashMap.put("mobile", TextMobile);
+                            stringStringHashMap.put("code", Rec_code);
+                            stringStringHashMap.put("appVersion", "1");
+                            stringStringHashMap.put("device", "android");
+                            stringStringHashMap.put("method", "checkCode");
+                            return stringStringHashMap;
+                        }
                 };
                 requestQueue.add(stringRequest);
 
