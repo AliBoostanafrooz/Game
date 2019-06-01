@@ -74,8 +74,6 @@ public class Registration extends AppCompatActivity {
                         }, new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        //TODO::
-
                         Toast.makeText(Registration.this, "ارتباط با سرور برقرار نشد. لطفاً مجدد تلاش کنید", Toast.LENGTH_SHORT).show();
                     }
                 }) {
