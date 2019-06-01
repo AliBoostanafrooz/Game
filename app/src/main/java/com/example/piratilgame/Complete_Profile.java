@@ -46,7 +46,7 @@ public class Complete_Profile extends Activity {
         inputText = findViewById(R.id.NameFamily);
         RegBTN = findViewById(R.id.Register);
         SharedPreferences sharedPreferences = getSharedPreferences("token", MODE_PRIVATE);
-        sharedPreferences.edit().putString("token", getIntent().getStringExtra("token")).apply();    //Get Token from Registration Activity//
+        sharedPreferences.edit().putString("token", getIntent().getStringExtra("token")).apply();
         final String String_from_SP = sharedPreferences.getString("token", getIntent().getStringExtra("token")); //Put Token to String Variable//
 
         RegBTN.setOnClickListener(new View.OnClickListener() {
